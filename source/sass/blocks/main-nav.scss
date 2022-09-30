@@ -1,0 +1,18 @@
+.main-nav__toggle {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+
+  &::before {
+    content: url("../img/icons/burger.svg");
+    width: 46px;
+    height: 30px;
+  }
+
+  @include tablet {
+    display: none;
+  }
+}
