@@ -1,0 +1,40 @@
+.catalog__wrapper {
+  padding: 64px 28px;
+
+  @include tablet {
+    padding: 100px 94px 0;
+  }
+}
+
+.catalog__title {
+  @include clear-padding;
+  @include clear-margin;
+  @include sn-s36-h40;
+
+  text-align: center;
+  color: $green-accent-color;
+}
+
+.catalog__list {
+  @include clear-list-styles;
+
+  margin: 64px auto 0;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include tablet {
+    gap: 52px;
+  }
+}
+
+.catalog__item--mobile-hidden {
+  @include mobile-only {
+    display: none;
+  }
+
+  @include tablet {
+    display: block;
+  }
+}

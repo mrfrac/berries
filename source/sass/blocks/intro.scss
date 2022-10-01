@@ -1,0 +1,117 @@
+.intro__wrapper {
+  width: 100%;
+  background-color: $blue-gray-bg-color;
+  background-image: url("../img/intro-bg-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center 75%;
+  background-size: cover;
+  min-height: 640px;
+  padding: 68px 27px 70px 28px;
+  box-sizing: border-box;
+
+  @supports (background-image: url("../img/intro-bg-mobile.webp")) {
+    background-image: url("../img/intro-bg-mobile.webp");
+    background-repeat: no-repeat;
+    background-color: $blue-gray-bg-color;
+    background-position: center 75%;
+    background-size: cover;
+  }
+
+  @include retina {
+    background-image: url("../img/intro-bg-mobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-color: $blue-gray-bg-color;
+    background-position: center 75%;
+    background-size: cover;
+
+    @supports (background: url("../img/intro-bg-mobile@2x.webp")) {
+      background-image: url("../img/intro-bg-mobile@2x.webp");
+      background-repeat: no-repeat;
+      background-color: $blue-gray-bg-color;
+      background-position: center 75%;
+      background-size: cover;
+    }
+  }
+
+  @include tablet {
+    background-image: url("../img/intro-bg-tablet.jpg");
+    background-repeat: no-repeat;
+    background-color: $blue-gray-bg-color;
+    min-height: 940px;
+    background-position: center 50%;
+    background-size: cover;
+    padding-top: 142px;
+
+    @supports (background-image: url("../img/intro-bg-tablet.webp")) {
+      background-image: url("../img/intro-bg-tablet.webp");
+      background-repeat: no-repeat;
+      background-color: $blue-gray-bg-color;
+      background-position: center 50%;
+      background-size: cover;
+    }
+
+    @include retina {
+      background-image: url("../img/intro-bg-tablet@2x.jpg");
+      background-repeat: no-repeat;
+      background-color: $blue-gray-bg-color;
+      background-position: center 50%;
+      background-size: cover;
+
+      @supports (background-image: url("../img/intro-bg-tablet@2x.webp")) {
+        background-image: url("../img/intro-bg-tablet@2x.webp");
+        background-repeat: no-repeat;
+        background-color: $blue-gray-bg-color;
+        background-position: center 50%;
+        background-size: cover;
+      }
+    }
+}
+
+  @include desktop {
+    background-image: url("../img/intro-bg-desktop.jpg");
+    background-color: $blue-gray-bg-color;
+    min-height: 800px;
+    background-position: center 90%;
+    background-size: cover;
+    padding-top: 174px;
+
+    @supports (background-image: url("../img/intro-bg-desktop.webp")) {
+      background-image: url("../img/intro-bg-desktop.webp");
+      background-repeat: no-repeat;
+      background-color: $blue-gray-bg-color;
+      background-position: center 90%;
+      background-size: cover;
+    }
+
+    @include retina {
+      background-image: url("../img/intro-bg-desktop@2x.jpg");
+      background-repeat: no-repeat;
+      background-color: $blue-gray-bg-color;
+      background-position: center 90%;
+      background-size: cover;
+
+      @supports (background-image: url("../img/intro-bg-desktop@2x.webp")) {
+        background-image: url("../img/intro-bg-desktop@2x.webp");
+        background-repeat: no-repeat;
+        background-color: $blue-gray-bg-color;
+        background-position: center 90%;
+        background-size: cover;
+      }
+    };
+  }
+}
+
+.intro__title {
+  @include clear-margin;
+  @include clear-padding;
+  @include sn-s36-h40;
+
+  color: #0F805D;
+  text-align: center;
+  padding-bottom: 32px;
+}
+
+.intro__features {
+  @include clear-list-styles;
+  padding-bottom: 48px;
+}

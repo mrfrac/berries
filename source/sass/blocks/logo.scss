@@ -1,0 +1,29 @@
+.logo {
+  display: block;
+  text-decoration: none;
+
+  &:hover {
+    .logo__image, .logo__text {
+      color: #7BDB0A;
+    }
+  }
+
+  &:active {
+    .logo__image, .logo__text {
+      color: rgba(15, 128, 93, 0.5);
+    }
+  }
+}
+.logo__image.right-leaf:hover {
+  fill: yellow;
+}
+
+.logo__image {
+  fill: none;
+  color: #0F805D;
+}
+
+.logo__text {
+    display: inline-block;
+    fill: #0F805D;
+}

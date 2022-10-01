@@ -1,0 +1,117 @@
+.contacts__wrapper {
+  padding: 118px 27px 64px;
+  position: relative;
+
+  &:before {
+    content: "";
+    background-image: url("../img/icons/leaf-line.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    width: 228px;
+    height: 32px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.contacts__title {
+  @include clear-padding;
+  @include clear-margin;
+  @include sn-s36-h40;
+
+  text-align: center;
+  color: $green-accent-color;
+  margin-bottom: 64px;
+}
+
+.contacts__text {
+  @include clear-margin;
+  @include mn-s16-h19;
+
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.contacts__list {
+  @include clear-list-styles;
+}
+
+.contacts__item-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.contacts__item--leaf {
+  &:before {
+    content: "";
+    display: block;
+    mask-image: url("../img/icons/contacts-leaf.svg");
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    color: red;
+    left: -32px;
+    background-color: #000000;
+  }
+}
+
+.contacts__item--phone {
+  &:before {
+    content: "";
+    display: block;
+    mask-image: url("../img/icons/phone.svg");
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    color: red;
+    left: -32px;
+    background-color: #000000;
+  }
+}
+
+.contacts__item--email {
+  &:before {
+    content: "";
+    display: block;
+    mask-image: url("../img/icons/email.svg");
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    color: red;
+    left: -32px;
+    background-color: #000000;
+  }
+}
+
+.contacts__item {
+  @include mn-s14-h16;
+
+  position: relative;
+  margin-left: 36px;
+  margin-bottom: 12px;
+  cursor: pointer;
+
+  &:hover {
+    .contacts__item-link {
+      color: $green-misc-color;
+    }
+
+    &:before {
+      background-color: $green-misc-color;
+    }
+  }
+
+  &:active {
+    .contacts__item-link {
+      color: $green-accent-color;
+    }
+
+    &:before {
+      background-color: $green-accent-color;
+    }
+  }
+}

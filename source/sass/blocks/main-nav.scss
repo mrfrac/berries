@@ -1,18 +1,84 @@
 .main-nav__toggle {
-  width: 60px;
-  height: 60px;
   cursor: pointer;
+  border: none;
   background-color: transparent;
-  padding: 0;
-  border: 0;
 
+  @include tablet {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
   &::before {
-    content: url("../img/icons/burger.svg");
+    content: "";
+    background-color: #0F805D;
+    mask-image: url("../img/icons/burger.svg");
+    display: block;
     width: 46px;
     height: 30px;
   }
 
+  &:hover {
+    &::before {
+      background-color: #7BDB0A;
+    }
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before {
+    content: "";
+    background-color: #0F805D;
+    mask-image: url("../img/icons/close.svg");
+    display: block;
+    width: 28px;
+    height: 29px;
+  }
+
+  &:hover {
+    &::before {
+      background-color: #7BDB0A;
+    }
+  }
+}
+
+.main-nav__list {
+  @include clear-list-styles;
+
+  padding: 32px 0 152px 40px;
+  margin: 0;
+  box-sizing: border-box;
+
   @include tablet {
     display: none;
+  }
+}
+
+.main-nav__item {
+  padding-bottom: 32px;
+}
+
+.main-nav__link {
+  @include mn-s20-h23;
+
+  color: #000000;
+  text-decoration: none;
+}
+
+.main-nav--closed .main-nav__list {
+  @include mobile-only {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__list {
+  @include mobile-only {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    width: 100%;
+    background: $blue-gray-bg-color
+    linear-gradient(180deg, rgba(88, 13, 101, 0.53), rgba(0, 0, 0, 0) 2.2%);
   }
 }

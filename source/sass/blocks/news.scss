@@ -1,0 +1,44 @@
+.news__wrapper {
+  position: relative;
+  padding: 64px 26px;
+
+  &:before {
+    content: "";
+    background-image: url("../img/icons/leaf-line.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    width: 228px;
+    height: 32px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.news__title {
+  @include clear-padding;
+  @include clear-margin;
+  @include sn-s36-h40;
+
+  text-align: center;
+  color: $green-accent-color;
+  margin-top: 96px;
+  margin-bottom: 64px;
+}
+
+.news__list {
+  @include clear-list-styles;
+
+  display: flex;
+  gap: 24px;
+  // flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @include tablet {
+    flex-direction: row;
+  }
+}

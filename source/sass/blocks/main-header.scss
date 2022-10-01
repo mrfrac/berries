@@ -1,0 +1,12 @@
+.main-header {
+  background-color: $blue-gray-bg-color;
+  padding: 8px 0;
+  position: relative;
+  box-shadow: 0 0px 10px 0px rgba(88, 13, 101, 0.25);
+}
+
+.main-header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

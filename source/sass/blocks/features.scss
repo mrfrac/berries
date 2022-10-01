@@ -1,0 +1,45 @@
+.features {
+
+  position: relative;
+}
+
+.features__item {
+  @include mn-s16-h19;
+
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 44px;
+
+  &:before {
+    display: block;
+    position: absolute;
+    left: 12px
+  }
+}
+
+.features__item--leaf {
+  &:before {
+    content: url("../img/icons/features-leaf.svg");
+    display: inline-block;
+    width: 21px;
+    height: 22px;
+  }
+}
+
+.features__item--snowflake {
+  &:before {
+    content: url("../img/icons/features-snowflake.svg");
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.features__item--delivery {
+  &:before {
+    content: url("../img/icons/features-delivery.svg");
+    display: inline-block;
+    width: 23px;
+    height: 17px;
+  }
+}
