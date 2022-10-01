@@ -8,7 +8,7 @@
   box-sizing: border-box;
   width: 268px;
 
-  &:after {
+  &::after {
     content: "";
     background-image: url("../img/icons/news-leaf.svg");
     background-repeat: no-repeat;

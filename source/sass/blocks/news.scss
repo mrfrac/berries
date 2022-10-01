@@ -2,7 +2,7 @@
   position: relative;
   padding: 64px 26px;
 
-  &:before {
+  &::before {
     content: "";
     background-image: url("../img/icons/leaf-line.svg");
     background-repeat: no-repeat;

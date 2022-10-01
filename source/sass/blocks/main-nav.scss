@@ -11,7 +11,7 @@
 .main-nav--closed .main-nav__toggle {
   &::before {
     content: "";
-    background-color: #0F805D;
+    background-color: $green-accent-color;
     mask-image: url("../img/icons/burger.svg");
     display: block;
     width: 46px;
@@ -20,7 +20,7 @@
 
   &:hover {
     &::before {
-      background-color: #7BDB0A;
+      background-color: $green-misc-color;
     }
   }
 }
@@ -28,7 +28,7 @@
 .main-nav--opened .main-nav__toggle {
   &::before {
     content: "";
-    background-color: #0F805D;
+    background-color: $green-accent-color;
     mask-image: url("../img/icons/close.svg");
     display: block;
     width: 28px;
@@ -37,7 +37,7 @@
 
   &:hover {
     &::before {
-      background-color: #7BDB0A;
+      background-color: $green-misc-color;
     }
   }
 }
@@ -79,6 +79,6 @@
     top: 70px;
     width: 100%;
     background: $blue-gray-bg-color
-    linear-gradient(180deg, rgba(88, 13, 101, 0.53), rgba(0, 0, 0, 0) 2.2%);
+      linear-gradient(180deg, rgba(88, 13, 101, 0.53), rgba(0, 0, 0, 0) 2.2%);
   }
 }

@@ -3,27 +3,26 @@
   text-decoration: none;
 
   &:hover {
-    .logo__image, .logo__text {
-      color: #7BDB0A;
+    .logo__image,
+    .logo__text {
+      color: $green-misc-color;
     }
   }
 
   &:active {
-    .logo__image, .logo__text {
+    .logo__image,
+    .logo__text {
       color: rgba(15, 128, 93, 0.5);
     }
   }
 }
-.logo__image.right-leaf:hover {
-  fill: yellow;
-}
 
 .logo__image {
   fill: none;
-  color: #0F805D;
+  color: $green-accent-color;
 }
 
 .logo__text {
-    display: inline-block;
-    fill: #0F805D;
+  display: inline-block;
+  fill: $green-accent-color;
 }
