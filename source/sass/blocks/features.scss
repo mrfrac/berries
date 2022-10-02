@@ -6,13 +6,17 @@
     flex-direction: column;
     row-gap: 5px;
   }
+
+  @include desktop {
+    row-gap: 2px;
+  }
 }
 
 .features__item {
   @include mn-s16-h19;
 
   margin-top: 6px;
-  margin-bottom: 19px;
+  margin-bottom: 22px;
   margin-left: 51px;
   position: relative;
 

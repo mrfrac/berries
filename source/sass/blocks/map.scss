@@ -1,5 +1,8 @@
 .map {
-  padding-bottom: 95px;
+
+  @include tablet {
+    padding-bottom: 95px;
+  }
 
   @include desktop {
     grid-area: map;
