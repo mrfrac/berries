@@ -25,6 +25,18 @@
     bottom: 24px;
     left: 50%;
     transform: translateX(-50%);
+
+    @include tablet {
+      width: 96px;
+      height: 40px;
+      bottom: 39px;
+    }
+  }
+
+  @include tablet {
+    width: 348px;
+    padding: 32px 36px 106px;
+    min-height: 494px;
   }
 }
 
@@ -45,11 +57,21 @@
   &--custom {
     margin: 29px 0 19px;
   }
+
+  @include tablet {
+    @include mn-s28-h33;
+
+    min-height: 100px;
+  }
 }
 
 .news-card__text {
   @include clear-margin;
   @include mn-s14-h16;
+
+  @include tablet {
+    @include mn-s16-h20;
+  }
 }
 
 .news-card__date {
@@ -58,4 +80,8 @@
   margin-top: auto;
   display: block;
   text-align: right;
+
+  @include tablet {
+    @include mn-s16-h20;
+  }
 }

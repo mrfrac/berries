@@ -1,6 +1,11 @@
 .features {
-
   position: relative;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+  }
 }
 
 .features__item {
@@ -16,37 +21,42 @@
     position: absolute;
     // left: 12px;
   }
-}
 
-.features__item--leaf {
-  &::before {
-    content: url("../img/icons/features-leaf.svg");
-    // display: inline-block;
-    width: 21px;
-    height: 22px;
-    top: 0;
-    left: -39px;
+  @include tablet {
+    @include mn-s18-h22;
+
+    margin-top: 0;
   }
 }
 
-.features__item--snowflake {
-  &::before {
-    content: url("../img/icons/features-snowflake.svg");
-    // display: inline-block;
-    width: 24px;
-    height: 24px;
-    top: 20px;
-    left: -40px;
+.features__item--leaf::before {
+  content: url("../img/icons/features-leaf.svg");
+  width: 21px;
+  height: 22px;
+  top: 0;
+  left: -39px;
+}
+
+.features__item--snowflake::before {
+  content: url("../img/icons/features-snowflake.svg");
+  width: 24px;
+  height: 24px;
+  top: 20px;
+  left: -40px;
+
+  @include tablet {
+    top: 11px;
   }
 }
 
-.features__item--delivery {
-  &::before {
-    content: url("../img/icons/features-delivery.svg");
-    // display: inline-block;
-    width: 23px;
-    height: 17px;
-    top: 12px;
-    left: -41px;
+.features__item--delivery::before {
+  content: url("../img/icons/features-delivery.svg");
+  width: 23px;
+  height: 17px;
+  top: 2px;
+  left: -41px;
+
+  @include tablet {
+
   }
 }

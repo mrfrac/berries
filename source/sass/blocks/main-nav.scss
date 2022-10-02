@@ -50,7 +50,12 @@
   box-sizing: border-box;
 
   @include tablet {
-    display: none;
+    display: flex;
+    padding-top: 28px;
+    padding-bottom: 0;
+    column-gap: 49px;
+    justify-content: space-between;
+
   }
 }
 

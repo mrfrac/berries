@@ -3,6 +3,10 @@
   padding: 8px 0;
   position: relative;
   box-shadow: 0 0 10px 0 rgba(88, 13, 101, 0.25);
+
+  @include tablet {
+    padding: 15px 26px 6px;
+  }
 }
 
 .main-header__wrapper {

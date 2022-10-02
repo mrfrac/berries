@@ -18,8 +18,16 @@
   @include typography-template(16px, 19px);
 }
 
+@mixin mn-s16-h20 {
+  @include typography-template(16px, 20px);
+}
+
 @mixin mn-s18-h21 {
   @include typography-template(18px, 21px);
+}
+
+@mixin mn-s18-h22 {
+  @include typography-template(18px, 22px);
 }
 
 @mixin mn-s20-h23 {
@@ -36,4 +44,8 @@
 
 @mixin sn-s36-h40 {
   @include typography-template(36px, 40px, $secondary-font-family);
+}
+
+@mixin sn-s48-h54 {
+  @include typography-template(48px, 54px, $secondary-font-family);
 }

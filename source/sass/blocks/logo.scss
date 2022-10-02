@@ -20,6 +20,11 @@
 .logo__image {
   fill: none;
   color: $green-accent-color;
+
+  @include tablet {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .logo__text {
@@ -28,5 +33,10 @@
 
   @include mobile-only {
     display: none;
+  }
+
+  @include tablet {
+    margin-bottom: 5px;
+    margin-left: 2px;
   }
 }

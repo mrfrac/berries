@@ -2,7 +2,7 @@
   padding: 66px 28px;
 
   @include tablet {
-    padding: 100px 94px 0;
+    padding: 84px 94px 107px;
   }
 }
 
@@ -13,6 +13,10 @@
 
   text-align: center;
   color: $green-accent-color;
+
+  @include tablet {
+    @include sn-s48-h54;
+  }
 }
 
 .catalog__list {
@@ -26,6 +30,7 @@
 
   @include tablet {
     gap: 52px;
+    margin-top: 74px;
   }
 }
 
