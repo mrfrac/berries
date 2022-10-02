@@ -16,12 +16,12 @@
 .product__title {
   @include clear-margin;
   @include clear-padding;
-  @include sn-s28-h33;
+  @include mn-s28-h33;
 
   color: $green-accent-color;
   text-align: center;
-  margin-top: 28px;
-  margin-bottom: 28px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .product__title-link {
@@ -45,4 +45,6 @@
   width: auto;
   margin-left: 24px;
   margin-right: 20px;
+  padding-bottom: 16px;
+  padding-top: 14px;
 }

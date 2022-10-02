@@ -5,8 +5,8 @@
   background-repeat: no-repeat;
   background-position: center 75%;
   background-size: cover;
-  min-height: 640px;
-  padding: 68px 27px 70px 28px;
+  min-height: 636px;
+  padding: 64px 27px 70px 28px;
   box-sizing: border-box;
 
   @supports (background-image: url("../img/intro-bg-mobile.webp")) {
@@ -115,5 +115,6 @@
 
 .intro__features {
   @include clear-list-styles;
-  padding-bottom: 48px;
+  margin-left: 21px;
+  margin-bottom: 54px;
 }

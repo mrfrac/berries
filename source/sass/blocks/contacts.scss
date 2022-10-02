@@ -1,5 +1,5 @@
 .contacts__wrapper {
-  padding: 118px 27px 64px;
+  padding: 118px 27px 34px;
   position: relative;
 
   &::before {
@@ -38,6 +38,11 @@
 
 .contacts__list {
   @include clear-list-styles;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+  justify-content: space-between;
 }
 
 .contacts__item-link {
@@ -53,7 +58,7 @@
     width: 32px;
     height: 32px;
     position: absolute;
-    left: -32px;
+    left: -37px;
     background-color: #000000;
   }
 }
@@ -66,12 +71,15 @@
     width: 32px;
     height: 32px;
     position: absolute;
-    left: -32px;
+    left: -37px;
+    top: -6px;
     background-color: #000000;
   }
 }
 
 .contacts__item--email {
+  margin-top: 10px;
+
   &::before {
     content: "";
     display: block;
@@ -79,7 +87,8 @@
     width: 32px;
     height: 32px;
     position: absolute;
-    left: -32px;
+    left: -37px;
+    top: -6px;
     background-color: #000000;
   }
 }
@@ -89,7 +98,7 @@
 
   position: relative;
   margin-left: 36px;
-  margin-bottom: 12px;
+  // margin-bottom: 12px;
   cursor: pointer;
 
   &:hover {

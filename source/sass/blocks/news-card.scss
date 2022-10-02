@@ -1,12 +1,16 @@
 .news-card {
   border: 2px solid $green-accent-color;
   border-radius: 40px;
-  padding-left: 20px;
+  padding-left: 19px;
   padding-right: 20px;
-  padding-bottom: 72px;
+  padding-bottom: 70px;
+  padding-top: 28px;
   position: relative;
   box-sizing: border-box;
+  min-height: 400px;
   width: 268px;
+  display: flex;
+  flex-direction: column;
 
   &::after {
     content: "";
@@ -29,8 +33,18 @@
   @include clear-padding;
   @include mn-s20-h23;
 
-  margin: 32px 32px 20px;
+  margin: 0 0 21px;
   text-align: center;
+  min-height: 68px;
+  display: flex;
+
+  span {
+    margin: auto;
+  }
+
+  &--custom {
+    margin: 29px 0 19px;
+  }
 }
 
 .news-card__text {
@@ -41,7 +55,7 @@
 .news-card__date {
   @include mn-s14-h16;
 
-  margin-top: 12px;
+  margin-top: auto;
   display: block;
   text-align: right;
 }

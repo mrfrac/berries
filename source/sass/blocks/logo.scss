@@ -25,4 +25,8 @@
 .logo__text {
   display: inline-block;
   fill: $green-accent-color;
+
+  @include mobile-only {
+    display: none;
+  }
 }

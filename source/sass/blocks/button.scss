@@ -1,14 +1,14 @@
 .button {
+  @include mn-s20-h23;
+
   display: block;
-  font-family: "Raleway", "Arial", sans-serif;
   border: none;
   text-decoration: none;
-  padding: 14px 0;
+  padding: 17px 0;
   cursor: pointer;
   box-sizing: border-box;
   background-color: $purple-accent-color;
   color: $white-bg-color;
-  font-size: 20px;
   width: 100%;
   border-radius: 40px;
   text-align: center;

@@ -1,6 +1,6 @@
 .main-footer {
   background-color: $blue-gray-bg-color;
-  padding-top: 11px;
+  padding-top: 72px;
   padding-bottom: 20px;
 
   @include tablet {
@@ -12,10 +12,12 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  row-gap: 7px;
+  row-gap: 4px;
+  padding-left: 26px;
+  padding-right: 26px;
 
   @media (max-width: 427px) {
-    column-gap: 40px;
+    column-gap: 81px;
   }
 
   @media (min-width: 427px) {

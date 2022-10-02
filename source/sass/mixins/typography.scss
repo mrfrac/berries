@@ -26,6 +26,10 @@
   @include typography-template(20px, 23px);
 }
 
+@mixin mn-s28-h33 {
+  @include typography-template(28px, 33px);
+}
+
 @mixin sn-s28-h33 {
   @include typography-template(28px, 33px, $secondary-font-family);
 }
