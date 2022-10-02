@@ -6,6 +6,10 @@
   @include tablet {
     padding: 23px 0 22px 0;
   }
+
+  @include desktop {
+    padding: 23px 156px 22px 159px;
+  }
 }
 
 .main-footer__wrapper {

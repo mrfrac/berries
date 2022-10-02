@@ -4,6 +4,12 @@
   @include tablet {
     padding: 84px 94px 107px;
   }
+
+  @include desktop {
+    padding-top: 100px;
+    padding-right: 156px;
+    padding-left: 156px;
+  }
 }
 
 .catalog__title {
@@ -16,6 +22,10 @@
 
   @include tablet {
     @include sn-s48-h54;
+  }
+
+  @include desktop {
+    @include sn-s52-h57;
   }
 }
 
@@ -31,6 +41,13 @@
   @include tablet {
     gap: 52px;
     margin-top: 74px;
+  }
+
+  @include desktop {
+    justify-content: unset;
+    gap: 24px;
+    margin-top: 93px;
+    row-gap: 52px;
   }
 }
 

@@ -20,6 +20,11 @@
       width: 298px;
     }
   }
+
+  @include desktop {
+    padding-right: 1px;
+    padding-left: 1px;
+  }
 }
 
 .news__title {
@@ -37,6 +42,12 @@
 
     margin: 44px 0 72px;
   }
+
+  @include desktop {
+    @include sn-s52-h57;
+    margin-top: 70px;
+    margin-bottom: 98px;
+  }
 }
 
 .news__list {
@@ -51,5 +62,10 @@
     flex-direction: row;
     gap: 20px;
     row-gap: 32px;
+  }
+
+  @include desktop {
+    justify-content: center;
+    gap: 25px;
   }
 }

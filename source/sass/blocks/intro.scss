@@ -105,6 +105,10 @@
   @include tablet {
     padding-left: 192px;
   }
+
+  @include desktop {
+    padding: 172px 347px 0 534px;
+  }
 }
 
 .intro__title {
@@ -121,6 +125,12 @@
 
     margin-bottom: 50px;
   }
+
+  @include desktop {
+    @include sn-s52-h57;
+
+    margin-bottom: 57px;
+  }
 }
 
 .intro__features {
@@ -133,6 +143,11 @@
     margin-left: 14px;
     margin-bottom: 35px;
   }
+
+  @include desktop {
+    margin-left: 23px;
+    margin-bottom: 38px;
+  }
 }
 
 .intro__order-button {
@@ -143,5 +158,10 @@
     margin-right: 20px;
     display: table-caption;
     margin-right: 190px;
+  }
+
+  @include desktop {
+    margin-left: 42px;
+    margin-right: 169px;
   }
 }

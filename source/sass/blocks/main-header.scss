@@ -7,6 +7,11 @@
   @include tablet {
     padding: 15px 26px 6px;
   }
+
+  @include desktop {
+    padding-right: 192px;
+    padding-left: 156px;
+  }
 }
 
 .main-header__wrapper {
@@ -14,4 +19,8 @@
   align-items: center;
   justify-content: space-between;
   padding-right: 21px;
+
+  @include desktop {
+    padding-right: 0;
+  }
 }

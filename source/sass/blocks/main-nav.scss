@@ -55,12 +55,20 @@
     padding-bottom: 0;
     column-gap: 49px;
     justify-content: space-between;
+  }
 
+  @include desktop {
+    column-gap: 28px;
   }
 }
 
 .main-nav__item {
   padding-bottom: 32px;
+
+  @include desktop {
+    min-width: 132px;
+    padding-bottom: 36px;
+  }
 }
 
 .main-nav__link {

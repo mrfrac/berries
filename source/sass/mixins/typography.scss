@@ -49,3 +49,7 @@
 @mixin sn-s48-h54 {
   @include typography-template(48px, 54px, $secondary-font-family);
 }
+
+@mixin sn-s52-h57 {
+  @include typography-template(52px, 57px, $secondary-font-family);
+}

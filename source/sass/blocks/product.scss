@@ -47,4 +47,8 @@
   margin-right: 20px;
   padding-bottom: 16px;
   padding-top: 14px;
+
+  @include desktop {
+    @include mn-s20-h23;
+  }
 }
