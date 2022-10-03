@@ -1,0 +1,67 @@
+.order {
+  &::before {
+    margin-block-end: 64px;
+    display: block;
+    width: 100%;
+    min-height: 120px;
+    height: calc(84 / 320 * 100vw);
+    max-height: 200px;
+    content: "";
+    background-color: #fad6e4;
+    background-image: url("../img/order-header-bg-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+
+    @supports (background-image: url("../img/order-header-bg-mobile.webp")) {
+      background-image: url("../img/order-header-bg-mobile.webp");
+      background-repeat: no-repeat;
+      background-position: left bottom;
+    }
+
+    @include retina {
+      background-image: url("../img/order-header-bg-mobile@2x.jpg");
+
+      @supports (background-image: url("../img/order-header-bg-mobile@2x.webp")) {
+        background-image: url("../img/order-header-bg-mobile@2x.webp");
+      }
+    }
+
+    @include tablet {
+      background-image: url("../img/order-header-bg-tablet.jpg");
+      margin-block-end: 99px;
+
+      @supports (background-image: url("../img/order-header-bg-tablet.webp")) {
+        background-image: url("../img/order-header-bg-tablet.webp");
+        background-repeat: no-repeat;
+        background-position: left bottom;
+      }
+
+      @include retina {
+        background-image: url("../img/order-header-bg-tablet@2x.jpg");
+
+        @supports (background-image: url("../img/order-header-bg-tablet@2x.webp")) {
+          background-image: url("../img/order-header-bg-tablet@2x.webp");
+        }
+      }
+    }
+
+    @include desktop {
+      background-image: url("../img/order-header-bg-desktop.jpg");
+
+      @supports (background-image: url("../img/order-header-bg-desktop.webp")) {
+        background-image: url("../img/order-header-bg-desktop.webp");
+        background-repeat: no-repeat;
+        background-position: left bottom;
+      }
+
+      @include retina {
+        background-image: url("../img/order-header-bg-desktop@2x.jpg");
+
+        @supports (background-image: url("../img/order-header-bg-desktop@2x.webp")) {
+          background-image: url("../img/order-header-bg-desktop@2x.webp");
+        }
+      }
+    }
+  }
+}
