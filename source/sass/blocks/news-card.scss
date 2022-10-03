@@ -1,7 +1,7 @@
 .news-card {
   border: 2px solid $green-accent-color;
   border-radius: 40px;
-  padding: 28px 20px 70px 19px;
+  padding: 28px 17px 70px 19px;
   position: relative;
   box-sizing: border-box;
   min-height: 400px;
@@ -43,6 +43,7 @@
   @include desktop {
     width: 360px;
     padding-top: 28px;
+    padding-right: 31px;
   }
 }
 
@@ -58,6 +59,15 @@
 
   span {
     margin: auto;
+    width: 200px;
+
+    @include tablet {
+      width: 276px;
+    }
+
+    @include desktop {
+      width: 298px;
+    }
   }
 
   &--custom {

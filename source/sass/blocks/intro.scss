@@ -118,7 +118,7 @@
 
   color: $green-accent-color;
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 38px;
 
   @include tablet {
     @include sn-s48-h54;
@@ -152,7 +152,7 @@
 }
 
 .intro__order-button {
-  max-width: 250px;
+  max-width: 264px;
 
   @include tablet {
     @include mn-s28-h33;

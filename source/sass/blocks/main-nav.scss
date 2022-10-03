@@ -45,7 +45,7 @@
 .main-nav__list {
   @include clear-list-styles;
 
-  padding: 32px 0 152px 40px;
+  padding: 32px 0 122px 40px;
   margin: 0;
   box-sizing: border-box;
   z-index: 1;
@@ -64,7 +64,7 @@
 }
 
 .main-nav__item {
-  padding-bottom: 32px;
+  padding-bottom: 28px;
 
   @include desktop {
     min-width: 132px;

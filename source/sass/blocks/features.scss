@@ -4,7 +4,7 @@
   @include tablet {
     display: flex;
     flex-direction: column;
-    row-gap: 5px;
+    row-gap: 4px;
   }
 
   @include desktop {
@@ -16,7 +16,7 @@
   @include mn-s16-h19;
 
   margin-top: 6px;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   margin-left: 51px;
   position: relative;
 
@@ -57,6 +57,10 @@
   content: url("../img/icons/features-delivery.svg");
   width: 23px;
   height: 17px;
-  top: 2px;
+  top: 10px;
   left: -41px;
+
+  @include tablet {
+    top: 2px;
+  }
 }

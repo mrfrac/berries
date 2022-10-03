@@ -16,13 +16,13 @@
     transform: translateX(-50%);
 
     @include tablet {
-      top: 52px;
+      top: 47px;
       width: 298px;
       height: 42px;
     }
 
     @include desktop {
-      top: 39px;
+      top: 35px;
     }
   }
 

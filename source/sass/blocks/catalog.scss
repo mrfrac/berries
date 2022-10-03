@@ -34,19 +34,20 @@
 
   margin: 64px auto 0;
   display: flex;
-  gap: 24px;
+  gap: 25px;
   flex-wrap: wrap;
   justify-content: center;
 
   @include tablet {
-    gap: 52px;
+    row-gap: 53px;
     margin-top: 74px;
+    column-gap: 52px;
   }
 
   @include desktop {
     justify-content: unset;
     gap: 24px;
-    margin-top: 93px;
+    margin-top: 91px;
     row-gap: 52px;
   }
 }

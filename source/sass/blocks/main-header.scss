@@ -5,12 +5,12 @@
   box-shadow: 0 0 10px 0 rgba(88, 13, 101, 0.25);
 
   @include tablet {
-    padding: 15px 26px 6px;
+    padding: 15px 26px 10px 0;
   }
 
   @include desktop {
     padding-right: 192px;
-    padding-left: 156px;
+    padding-left: 129px;
   }
 }
 
@@ -19,6 +19,7 @@
   align-items: center;
   justify-content: space-between;
   padding-right: 21px;
+  padding-left: 26px;
 
   @include desktop {
     padding-right: 0;
