@@ -3,6 +3,10 @@
   border: none;
   background-color: transparent;
 
+  &--nojs {
+    display: none;
+  }
+
   @include tablet {
     display: none;
   }
@@ -85,7 +89,8 @@
   }
 }
 
-.main-nav--opened .main-nav__list {
+.main-nav--opened .main-nav__list,
+.main-nav--nojs .main-nav__list {
   @include mobile-only {
     display: block;
     position: absolute;
@@ -93,6 +98,6 @@
     top: 70px;
     width: 100%;
     background: $blue-gray-bg-color
-      linear-gradient(180deg, rgba(88, 13, 101, 0.53), rgba(0, 0, 0, 0) 2.2%);
+      linear-gradient(180deg, rgba(88, 13, 101, 0.3), rgba(0, 0, 0, 0) 1.8%);
   }
 }

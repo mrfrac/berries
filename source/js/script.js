@@ -1,4 +1,12 @@
 (function(){
+  ["main-nav__toggle--nojs", "main-nav--nojs", "intro--nojs"].forEach((className) => {
+    const elements = document.getElementsByClassName(className);
+
+    for (const el of elements) {
+      el.classList.remove(className);
+    }
+  });
+
   const button = document.querySelector(".main-nav__toggle");
   const mainNav = document.querySelector(".main-nav");
 
