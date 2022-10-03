@@ -2,18 +2,7 @@
   position: relative;
 
   &::before {
-    content: "";
-    background-image: url("../img/icons/leaf-line.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: block;
-    width: 228px;
-    height: 32px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    @include leaf-line;
 
     @include tablet {
       top: 47px;
