@@ -17,6 +17,18 @@
   }
 }
 
+.logo--inactive {
+  text-decoration: none;
+  cursor: default;
+
+  &:hover {
+    .logo__image,
+    .logo__text {
+      color: $green-accent-color;
+    }
+  }
+}
+
 .logo__image {
   fill: none;
   color: $green-accent-color;
@@ -29,7 +41,7 @@
 
 .logo__text {
   display: inline-block;
-  fill: $green-accent-color;
+  color: $green-accent-color;
 
   @include mobile-only {
     display: none;
