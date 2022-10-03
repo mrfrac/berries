@@ -42,7 +42,7 @@
     background-repeat: no-repeat;
     background-color: $blue-gray-bg-color;
     min-height: 940px;
-    background-position: center 50%;
+    background-position: center -10px;
     background-size: cover;
     padding-top: 142px;
 
@@ -50,7 +50,7 @@
       background-image: url("../img/intro-bg-tablet.webp");
       background-repeat: no-repeat;
       background-color: $blue-gray-bg-color;
-      background-position: center 50%;
+      background-position: center -10px;
       background-size: cover;
     }
 
@@ -58,7 +58,7 @@
       background-image: url("../img/intro-bg-tablet@2x.jpg");
       background-repeat: no-repeat;
       background-color: $blue-gray-bg-color;
-      background-position: center 50%;
+      background-position: center -10px;
       background-size: cover;
 
       /* stylelint-disable-next-line max-nesting-depth */
@@ -66,7 +66,7 @@
         background-image: url("../img/intro-bg-tablet@2x.webp");
         background-repeat: no-repeat;
         background-color: $blue-gray-bg-color;
-        background-position: center 50%;
+        background-position: center -10px;
         background-size: cover;
       }
     }
@@ -76,7 +76,7 @@
     background-image: url("../img/intro-bg-desktop.jpg");
     background-color: $blue-gray-bg-color;
     min-height: 800px;
-    background-position: center 90%;
+    background-position: center -6px;
     background-size: cover;
     padding-top: 174px;
 
@@ -84,7 +84,7 @@
       background-image: url("../img/intro-bg-desktop.webp");
       background-repeat: no-repeat;
       background-color: $blue-gray-bg-color;
-      background-position: center 90%;
+      background-position: center -6px;
       background-size: cover;
     }
 
@@ -92,7 +92,7 @@
       background-image: url("../img/intro-bg-desktop@2x.jpg");
       background-repeat: no-repeat;
       background-color: $blue-gray-bg-color;
-      background-position: center 90%;
+      background-position: center -6px;
       background-size: cover;
 
       /* stylelint-disable-next-line max-nesting-depth */
@@ -100,7 +100,7 @@
         background-image: url("../img/intro-bg-desktop@2x.webp");
         background-repeat: no-repeat;
         background-color: $blue-gray-bg-color;
-        background-position: center 90%;
+        background-position: center -6px;
         background-size: cover;
       }
     }
@@ -161,7 +161,8 @@
   @include tablet {
     @include mn-s28-h33;
 
-    max-width: unset;
+    width: 44vw;
+    max-width: 400px;
     margin-left: 21px;
     display: table-caption;
     margin-right: 190px;
@@ -170,5 +171,7 @@
   @include desktop {
     margin-left: 42px;
     margin-right: 169px;
+    width: 23.33vw;
+    max-width: 400px;
   }
 }
