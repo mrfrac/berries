@@ -52,6 +52,161 @@
     <section class="order">
       <div class="order__wrapper">
         <h1 class="order__title">Закажи ягоды</h1>
+
+        <p class="order__description">
+          Мы соберем для вас ягоды
+          и доставим их в удобном
+          для вас виде - свежими или замороженными
+        </p>
+
+        <div class="order-params">
+          <form class="order-params__form" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="berries-form">
+              <legend class="order-params__title">Выберите ягоды</legend>
+              <div class="berries-form__wrapper">
+                <div class="choose-control">
+                  <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="cowberry" name="cowberry">
+                  <label class="choose-control__label" for="cowberry">
+                    брусника
+                  </label>
+                </div>
+                <div class="choose-control">
+                  <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="cherry" name="cherry">
+                  <label class="choose-control__label" for="cherry">
+                    вишня
+                  </label>
+                </div>
+                <div class="choose-control">
+                  <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="blueberry" name="blueberry">
+                  <label class="choose-control__label choose-control__label--small" for="blueberry">
+                    голубика
+                  </label>
+                </div>
+                <div class="choose-control">
+                  <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="blackberry" name="blackberry">
+                  <label class="choose-control__label choose-control__label--small" for="blackberry">
+                    ежевика
+                  </label>
+                </div>
+                <div class="choose-control">
+                  <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="strawberry" name="strawberry">
+                  <label class="choose-control__label" for="strawberry">
+                    клубника
+                  </label>
+                </div>
+                <div class="choose-control">
+                  <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="cranberry" name="cranberry">
+                  <label class="choose-control__label" for="cranberry">
+                    клюква
+                  </label>
+                </div>
+                <div class="choose-control">
+                  <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="gooseberry" name="gooseberry">
+                  <label class="choose-control__label" for="gooseberry">
+                    крыжовник
+                  </label>
+                </div>
+                <div class="choose-control">
+                  <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="raspberry" name="raspberry">
+                  <label class="choose-control__label" for="raspberry">
+                    малина
+                  </label>
+                </div>
+                <div class="choose-control">
+                  <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="cloudberry" name="cloudberry" disabled>
+                  <label class="choose-control__label" for="cloudberry">
+                    морошка
+                  </label>
+                </div>
+                <div class="choose-control">
+                  <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="bilberry" name="bilberry" disabled>
+                  <label class="choose-control__label" for="bilberry">
+                    черника
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="storage-form">
+              <legend class="order-params__title">Вид хранения</legend>
+
+              <div class="storage-form__wrapper">
+                <div class="choose-control">
+                  <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="fresh" name="fresh">
+                  <label class="choose-control__label" for="fresh">
+                    свежие ягоды
+                  </label>
+                </div>
+                <div class="choose-control">
+                  <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="frozen" name="frozen">
+                  <label class="choose-control__label" for="frozen">
+                    замороженые ягоды
+                  </label>
+                </div>
+                <div class="choose-control">
+                  <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="mix" name="mix">
+                  <label class="choose-control__label" for="mix">
+                    ягодные миксы
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="delivery-form">
+              <legend class="order-params__title">Способ доставки</legend>
+
+              <div class="delivery-form__wrapper">
+                <div class="choose-control">
+                  <input class="choose-control__input" type="radio" id="delivery" name="delivery" value="delivery" checked>
+                  <label class="choose-control__label" for="delivery">
+                    Доставка (по СПБ в пределах КАД)
+                  </label>
+                </div>
+                <div class="choose-control">
+                  <input class="choose-control__input" type="radio" id="pickup" name="delivery" value="pickup">
+                  <label class="choose-control__label" for="pickup">
+                    Самовывоз (Набережная Обводного канала, 101)
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="client-contacts">
+              <legend class="order-params__title">Ваши контакты</legend>
+
+              <div class="client-contacts__wrapper">
+                <div class="text-control">
+                  <label class="text-control__label" for="name">Имя *</label>
+                  <input class="text-control__input" id="name" type="text" name="name" placeholder="Как к вам обращаться?" required>
+                </div>
+                <div class="text-control">
+                  <label class="text-control__label" for="phone">Телефон *</label>
+                  <div class="text-control__input-group">
+                    <input class="text-control__input" id="phone" type="tel" name="phone" placeholder="+7 ххх ххх хх хх" required>
+                    <div class="text-control__input-addon-phone"></div>
+                  </div>
+                </div>
+                <div class="text-control">
+                  <label class="text-control__label" for="email">Email *</label>
+                  <div class="text-control__input-group">
+                    <input class="text-control__input" id="email" type="email" name="email" placeholder="Ваш email" required>
+                    <div class="text-control__input-addon-email"></div>
+                  </div>
+                </div>
+                <div class="text-control">
+                  <label class="text-control__label" for="address">Адрес *</label>
+                  <textarea class="text-control__input text-control__input--textarea" id="address" name="address" placeholder="Адрес в Санкт-Петербурге"></textarea>
+                </div>
+                <div class="text-control">
+                  <label class="text-control__label text-control__label--small" for="name">Пожелания к заказу</label>
+                  <textarea class="text-control__input text-control__input--textarea" id="comments" name="comments" placeholder="Чем мы можем вам помочь?"></textarea>
+                </div>
+              </div>
+            </fieldset>
+
+            <button class="button order-params__button">Заказать</button>
+          </form>
+        </div>
       </div>
     </section>
 

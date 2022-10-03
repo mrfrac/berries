@@ -1,0 +1,9 @@
+.berries-form__wrapper {
+  display: grid;
+  align-items: start;
+  column-gap: 20px;
+  row-gap: 32px;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(6, auto);
+  grid-template-columns: repeat(2, 1fr);
+}

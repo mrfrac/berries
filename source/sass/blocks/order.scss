@@ -65,3 +65,26 @@
     }
   }
 }
+
+.order__wrapper {
+  padding: 0 26px;
+}
+
+.order__title {
+  @include sn-s36-h40;
+  @include clear-margin;
+  @include clear-padding;
+
+  color: $green-accent-color;
+  text-align: center;
+}
+
+.order__description {
+  @include mn-s16-h19;
+  @include clear-padding;
+  @include clear-margin;
+
+  color: #000000;
+  text-align: center;
+  margin: 32px 25px 41px;
+}
