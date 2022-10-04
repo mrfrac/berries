@@ -75,6 +75,11 @@
 
 .order__wrapper {
   padding: 0 26px 64px;
+
+  @include tablet {
+    padding-left: 72px;
+    padding-right: 72px;
+  }
 }
 
 .order__title {
@@ -84,6 +89,10 @@
 
   color: $green-accent-color;
   text-align: center;
+
+  @include tablet {
+    @include sn-s52-h57;
+  }
 }
 
 .order__description {
@@ -94,4 +103,9 @@
   color: #000000;
   text-align: center;
   margin: 32px 25px 41px;
+
+  @include tablet {
+    @include mn-s18-h22;
+    margin: 51px 80px 36px;
+  }
 }

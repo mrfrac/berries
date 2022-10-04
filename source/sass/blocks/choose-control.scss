@@ -6,14 +6,12 @@
 .choose-control__label {
   @include mn-s16-h19;
 
-  // text-transform: uppercase;
-
   &--small {
     @include mn-s14-h16;
   }
 
   @include tablet {
-    // @include mr-s20-h30;
+    @include mn-s18-h22;
   }
 }
 
@@ -36,12 +34,6 @@
     height: 21px;
     border: 2px solid $green-accent-color;
     margin-right: 16px;
-
-    @include tablet {
-      width: 38px;
-      height: 38px;
-      margin-right: 20px;
-    }
   }
 
   &--checkbox:checked::before,
@@ -51,11 +43,6 @@
     border-radius: 5px;
     box-sizing: border-box;
     margin-right: 9px;
-
-    @include tablet {
-      width: 38px;
-      height: 38px;
-    }
   }
 
   &:checked:hover::before,
@@ -86,13 +73,6 @@
     top: 6px;
     left: 6px;
 
-    @include tablet {
-      width: 18px;
-      height: 18px;
-      top: 11px;
-      left: 11px;
-    }
-
     @include desktop {
       top: 11px;
       left: 12px;
@@ -113,11 +93,9 @@
     left: 6px;
 
     @include tablet {
-      mask-size: 24px 19px;
-      width: 24px;
-      height: 19px;
-      top: 10px;
-      left: 8px;
+      mask-size: 15px 12px;
+      top: 6px;
+      left: 5px;
     }
   }
 
@@ -142,4 +120,15 @@
 
 .choose-control--radio .choose-control__label {
   width: 180px;
+
+  @include tablet {
+    width: 169px;
+  }
+}
+
+.choose-control__input--narrow-checkbox:checked::before,
+.choose-control__input--narrow-checkbox:not(:checked)::before {
+  @include tablet {
+    margin-right: 22px;
+  }
 }

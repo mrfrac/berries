@@ -27,6 +27,16 @@
 
 .contacts--order-page::before {
   top: 24px;
+
+  @include tablet {
+    top: 35px;
+  }
+}
+
+.contacts--order-page .contacts__wrapper {
+  @include tablet {
+    padding-top: 106px;
+  }
 }
 
 .contacts__wrapper {
@@ -164,7 +174,6 @@
 
   position: relative;
   margin-left: 36px;
-  // margin-bottom: 12px;
   cursor: pointer;
 
   &:hover {

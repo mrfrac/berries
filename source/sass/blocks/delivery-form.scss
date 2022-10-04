@@ -1,11 +1,29 @@
+.delivery-form {
+  @include tablet {
+    margin-bottom: 46px;
+  }
+}
+
 .delivery-form__wrapper {
   display: flex;
   flex-direction: column;
   gap: 33px;
+
+  @include tablet {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0p;
+    gap: 24px;
+    justify-content: space-evenly;
+  }
 }
 
 .delivery-form__label {
   &:last-child {
     width: 220px;
+
+    @include tablet {
+      width: unset;
+    }
   }
 }

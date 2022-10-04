@@ -64,61 +64,61 @@
             <fieldset class="order-params__fieldset berries-form">
               <legend class="order-params__title">Выберите ягоды</legend>
               <div class="berries-form__wrapper">
-                <div class="choose-control">
+                <div class="choose-control berries-form__item">
                   <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="cowberry" name="cowberry">
                   <label class="choose-control__label" for="cowberry">
                     брусника
                   </label>
                 </div>
-                <div class="choose-control">
+                <div class="choose-control berries-form__item">
                   <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="cherry" name="cherry">
                   <label class="choose-control__label" for="cherry">
                     вишня
                   </label>
                 </div>
-                <div class="choose-control">
+                <div class="choose-control berries-form__item">
                   <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="blueberry" name="blueberry">
                   <label class="choose-control__label choose-control__label--small" for="blueberry">
                     голубика
                   </label>
                 </div>
-                <div class="choose-control">
+                <div class="choose-control berries-form__item">
                   <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="blackberry" name="blackberry">
                   <label class="choose-control__label choose-control__label--small" for="blackberry">
                     ежевика
                   </label>
                 </div>
-                <div class="choose-control">
+                <div class="choose-control berries-form__item">
                   <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="strawberry" name="strawberry">
                   <label class="choose-control__label" for="strawberry">
                     клубника
                   </label>
                 </div>
-                <div class="choose-control">
+                <div class="choose-control berries-form__item">
                   <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="cranberry" name="cranberry">
                   <label class="choose-control__label" for="cranberry">
                     клюква
                   </label>
                 </div>
-                <div class="choose-control">
+                <div class="choose-control berries-form__item berries-form__item-hidden-on-tablet">
                   <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="gooseberry" name="gooseberry">
                   <label class="choose-control__label" for="gooseberry">
                     крыжовник
                   </label>
                 </div>
-                <div class="choose-control">
+                <div class="choose-control berries-form__item berries-form__item-hidden-on-tablet">
                   <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="raspberry" name="raspberry">
                   <label class="choose-control__label" for="raspberry">
                     малина
                   </label>
                 </div>
-                <div class="choose-control">
+                <div class="choose-control berries-form__item">
                   <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="cloudberry" name="cloudberry" disabled>
                   <label class="choose-control__label" for="cloudberry">
                     морошка
                   </label>
                 </div>
-                <div class="choose-control">
+                <div class="choose-control berries-form__item">
                   <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="bilberry" name="bilberry" disabled>
                   <label class="choose-control__label" for="bilberry">
                     черника
@@ -132,13 +132,13 @@
 
               <div class="storage-form__wrapper">
                 <div class="choose-control">
-                  <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="fresh" name="fresh">
+                  <input class="choose-control__input choose-control__input--checkbox choose-control__input--narrow-checkbox" type="checkbox" id="fresh" name="fresh">
                   <label class="choose-control__label" for="fresh">
                     свежие ягоды
                   </label>
                 </div>
                 <div class="choose-control">
-                  <input class="choose-control__input choose-control__input--checkbox" type="checkbox" id="frozen" name="frozen">
+                  <input class="choose-control__input choose-control__input--checkbox choose-control__input--narrow-checkbox" type="checkbox" id="frozen" name="frozen">
                   <label class="choose-control__label" for="frozen">
                     замороженые ягоды
                   </label>
@@ -172,34 +172,32 @@
             </fieldset>
 
             <fieldset class="order-params__fieldset client-contacts">
-              <legend class="order-params__title">Ваши контакты</legend>
+              <legend class="order-params__title client-contacts__title">Ваши контакты</legend>
 
               <div class="client-contacts__wrapper">
                 <div class="text-control client-contacts__item text-control--required">
                   <label class="text-control__label" for="name">Имя</label>
                   <input class="text-control__input" id="name" type="text" name="name" placeholder="Как к вам обращаться?" required>
                 </div>
-                <div class="text-control client-contacts__item text-control--required">
+                <div class="text-control client-contacts__item text-control--required client-contacts__phone">
                   <label class="text-control__label" for="phone">Телефон</label>
                   <div class="text-control__input-group">
                     <input class="text-control__input" id="phone" type="tel" name="phone" placeholder="+7 ххх ххх хх хх" required>
-                    <div class="text-control__input-addon-phone"></div>
                   </div>
                 </div>
                 <div class="text-control client-contacts__item text-control--required">
                   <label class="text-control__label" for="email">Email</label>
                   <div class="text-control__input-group">
                     <input class="text-control__input" id="email" type="email" name="email" placeholder="Ваш email" required>
-                    <div class="text-control__input-addon-email"></div>
                   </div>
                 </div>
-                <div class="text-control client-contacts__item text-control--required">
+                <div class="text-control client-contacts__item text-control--required client-contacts__address">
                   <label class="text-control__label" for="address">Адрес</label>
-                  <textarea class="text-control__input text-control__input--textarea client-contacts__address" id="address" name="address" placeholder="Адрес в Санкт-Петербурге"></textarea>
+                  <textarea class="text-control__input text-control__input--textarea" id="address" name="address" placeholder="Адрес в Санкт-Петербурге" required></textarea>
                 </div>
-                <div class="text-control client-contacts__item">
-                  <label class="text-control__label text-control__label--small" for="name">Пожелания к заказу</label>
-                  <textarea class="text-control__input text-control__input--textarea client-contacts__comments" id="comments" name="comments" placeholder="Чем мы можем вам помочь?"></textarea>
+                <div class="text-control client-contacts__item client-contacts__comments">
+                  <label class="text-control__label text-control__label--small text-control__label--clear" for="name">Пожелания к заказу</label>
+                  <textarea class="text-control__input text-control__input--textarea " id="comments" name="comments" placeholder="Чем мы можем вам помочь?"></textarea>
                 </div>
               </div>
             </fieldset>
@@ -212,7 +210,7 @@
 
     <section class="contacts contacts--order-page" id="contacts">
       <div class="contacts__wrapper">
-        <h2 class="contacts__title">Где забрать<br/>ягоды? </h2>
+        <h2 class="contacts__title">Где забрать ягоды? </h2>
         <p class="contacts__text">
           Забери ягоды с&nbsp;нашего склада по&nbsp;адресу:
         </p>
