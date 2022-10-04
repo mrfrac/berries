@@ -32,7 +32,7 @@
 .catalog__list {
   @include clear-list-styles;
 
-  margin: 64px auto 0;
+  margin: 67px auto 0;
   display: flex;
   gap: 25px;
   flex-wrap: wrap;
@@ -47,7 +47,7 @@
   @include desktop {
     justify-content: unset;
     gap: 24px;
-    margin-top: 91px;
+    margin-top: 94px;
     row-gap: 52px;
   }
 }

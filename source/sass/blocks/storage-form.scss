@@ -1,7 +1,13 @@
+.storage-form {
+  @include mobile-only {
+    margin-bottom: 30px;
+  }
+}
+
 .storage-form__wrapper {
   display: flex;
   flex-direction: column;
-  row-gap: 18px;
+  row-gap: 19px;
 
   @include tablet {
     display: grid;
@@ -20,7 +26,7 @@
   }
 }
 
-.storage-form .order-params__title {
+.storage-form__title {
   @include desktop {
     margin-bottom: 47px;
   }

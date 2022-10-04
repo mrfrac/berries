@@ -68,6 +68,10 @@
 }
 
 .client-contacts__title {
+  @include mobile-only {
+    margin-bottom: 31px;
+  }
+
   @include tablet {
     text-align: center;
   }

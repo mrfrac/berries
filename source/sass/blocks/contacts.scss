@@ -44,7 +44,7 @@
 }
 
 .contacts__wrapper {
-  padding: 118px 27px 34px;
+  padding: 119px 27px 34px;
 
   @include tablet {
     padding-left: 118px;
@@ -66,7 +66,7 @@
 
   text-align: center;
   color: $green-accent-color;
-  margin-bottom: 64px;
+  margin: 0 0 64px -11px;
 
   @include tablet {
     @include sn-s48-h54;
@@ -87,7 +87,8 @@
   @include mn-s16-h19;
 
   text-align: center;
-  margin-bottom: 34px;
+  margin: 0 10px 34px 5px;
+
 
   @include tablet {
     @include mn-s20-h23;
@@ -120,6 +121,7 @@
 .contacts__item-link {
   text-decoration: none;
   color: #000000;
+  margin-left: -3px
 }
 
 .contacts__item--leaf {

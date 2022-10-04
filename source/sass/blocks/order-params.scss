@@ -16,7 +16,7 @@
   }
 
   @include desktop {
-    padding-top: 104px;
+    padding-top: 107px;
   }
 }
 
@@ -45,18 +45,22 @@
   @include tablet {
     @include mn-s28-h33;
 
-    margin-bottom: 39px;
+    margin-bottom: 41px;
   }
 
   @include desktop {
-    margin-bottom: 46px;
+    margin-bottom: 48px;
   }
 }
 
 .order-params__button {
+  width: 82.2vw;
+  max-width: 300px;;
+
   @include tablet {
     @include mn-s28-h33;
 
+    max-width: unset;
     padding: 18px 0;
     margin: 0 auto;
     width: 336px;
