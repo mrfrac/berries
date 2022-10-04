@@ -55,14 +55,8 @@
   z-index: 1;
 
   @include tablet {
-    /*display: flex;
-    padding-top: 28px;
-    padding-bottom: 0;
-    column-gap: 49px;
-    justify-content: space-between;*/
-
     display: grid;
-    grid-template-columns: repeat(4,minmax(112px,max-content));
+    grid-template-columns: repeat(4, minmax(112px, max-content));
     gap: 16px;
     align-items: center;
     min-height: initial;
