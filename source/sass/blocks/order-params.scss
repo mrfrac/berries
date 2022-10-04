@@ -14,6 +14,10 @@
   @include tablet {
     padding-top: 113px;
   }
+
+  @include desktop {
+    padding-top: 104px;
+  }
 }
 
 .order-params__fieldset {
@@ -23,6 +27,12 @@
 
   @include tablet {
     padding: 0 45px;
+  }
+
+  @include desktop {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 39px;
   }
 }
 
@@ -37,6 +47,10 @@
 
     margin-bottom: 39px;
   }
+
+  @include desktop {
+    margin-bottom: 46px;
+  }
 }
 
 .order-params__button {
@@ -45,6 +59,6 @@
 
     padding: 18px 0;
     margin: 0 auto;
-    width: 44vw;
+    width: 336px;
   }
 }

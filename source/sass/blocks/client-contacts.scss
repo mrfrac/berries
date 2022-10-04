@@ -4,6 +4,10 @@
     padding-right: 0;
     margin-bottom: 40px;
   }
+
+  @include desktop {
+    margin-bottom: 47px;
+  }
 }
 
 .client-contacts__wrapper {
@@ -17,6 +21,10 @@
     column-gap: 24px;
     row-gap: 36px;
     align-items: start;
+  }
+
+  @include desktop {
+    padding-right: 117px;
   }
 }
 
@@ -62,6 +70,11 @@
 .client-contacts__title {
   @include tablet {
     text-align: center;
+  }
+
+  @include desktop {
+    text-align: left;
+    margin-bottom: 44px;
   }
 }
 

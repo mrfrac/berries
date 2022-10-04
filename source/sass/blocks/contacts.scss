@@ -37,6 +37,10 @@
   @include tablet {
     padding-top: 106px;
   }
+
+  @include desktop {
+    padding-top: 119px;
+  }
 }
 
 .contacts__wrapper {

@@ -73,10 +73,6 @@
     top: 6px;
     left: 6px;
 
-    @include desktop {
-      top: 11px;
-      left: 12px;
-    }
   }
 
   &--checkbox:checked::after,
@@ -124,11 +120,19 @@
   @include tablet {
     width: 169px;
   }
+
+  @include desktop {
+    width: 220px;
+  }
 }
 
 .choose-control__input--narrow-checkbox:checked::before,
 .choose-control__input--narrow-checkbox:not(:checked)::before {
   @include tablet {
     margin-right: 22px;
+  }
+
+  @include desktop {
+    margin-right: 11px;
   }
 }

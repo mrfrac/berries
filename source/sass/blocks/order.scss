@@ -80,6 +80,11 @@
     padding-left: 72px;
     padding-right: 72px;
   }
+
+  @include desktop {
+    padding-left: 348px;
+    padding-right: 348px;
+  }
 }
 
 .order__title {
@@ -107,5 +112,9 @@
   @include tablet {
     @include mn-s18-h22;
     margin: 51px 80px 36px;
+  }
+
+  @include desktop {
+    margin: 47px 111px 46px;
   }
 }

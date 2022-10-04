@@ -16,6 +16,11 @@
     gap: 24px;
     justify-content: space-evenly;
   }
+
+  @include desktop {
+    gap: 40px;
+    justify-content: start;
+  }
 }
 
 .delivery-form__label {
@@ -25,5 +30,11 @@
     @include tablet {
       width: unset;
     }
+  }
+}
+
+.delivery-form .order-params__title {
+  @include desktop {
+    margin-bottom: 52px;
   }
 }

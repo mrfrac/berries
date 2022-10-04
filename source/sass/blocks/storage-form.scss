@@ -11,4 +11,17 @@
     column-gap: 20px;
     margin-bottom: 14px;
   }
+
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    column-gap: 47px;
+    margin-bottom: 5px;
+  }
+}
+
+.storage-form .order-params__title {
+  @include desktop {
+    margin-bottom: 47px;
+  }
 }
