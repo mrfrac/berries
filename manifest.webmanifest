@@ -1,0 +1,11 @@
+{
+  "name": "HTML Academy: Ягоды",
+  "short_name": "Ягода",
+  "description": "Ягоды с доставкой",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "img/favicons/152.png", "type": "image/png", "sizes": "152x152" },
+    { "src": "img/favicons/192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "img/favicons/512.png", "type": "image/png", "sizes": "512x512" }
+  ]
+}
