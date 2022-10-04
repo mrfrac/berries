@@ -70,9 +70,8 @@
 
   @include tablet {
     @include sn-s48-h54;
-    margin-top: 44px;
-    margin-bottom: 72px;
-    // margin: 20px 100px 0;
+
+    margin: 44px 24px 72px 16px;
   }
 
   @include desktop {

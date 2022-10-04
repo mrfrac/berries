@@ -19,7 +19,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 24px;
-    row-gap: 36px;
+    row-gap: 34px;
     align-items: start;
   }
 
@@ -49,7 +49,7 @@
   height: 88px;
 
   @include tablet {
-    height: 49px;
+    height: 54px;
   }
 }
 
@@ -63,27 +63,33 @@
   height: 124px;
 
   @include tablet {
-    height: 146px;
+    height: 142px;
   }
 }
 
 .client-contacts__title {
   @include mobile-only {
     margin-bottom: 31px;
+    margin-left: 0;
+    margin-right: 10px;
   }
 
   @include tablet {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @include desktop {
     text-align: left;
-    margin-bottom: 44px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 51px;
   }
 }
 
 .client-contacts__address .text-control__label {
   @include tablet {
-    margin-bottom: 2px;
+    margin-bottom: 3px;
   }
 }

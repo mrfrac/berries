@@ -25,6 +25,10 @@
     border: 1px solid $green-misc-color;
     color: #000000;
   }
+
+  @include tablet {
+    padding: 15px 10px;
+  }
 }
 
 .text-control__label {
@@ -42,6 +46,7 @@
 
     @include tablet {
       margin-bottom: 2px;
+      margin-top: 7px;
     }
   }
 

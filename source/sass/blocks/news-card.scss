@@ -32,11 +32,18 @@
     @include desktop {
       bottom: 44px;
     }
+
+  }
+  &:last-child {
+    @include tablet {
+      margin-left: -9px;
+      margin-top: 3px;
+    }
   }
 
   @include tablet {
     width: 348px;
-    padding: 32px 36px 106px;
+    padding: 32px 34px 106px;
     min-height: 494px;
   }
 
