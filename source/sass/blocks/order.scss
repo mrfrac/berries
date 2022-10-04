@@ -22,6 +22,7 @@
     @include retina {
       background-image: url("../img/order-header-bg-mobile@2x.jpg");
 
+      /* stylelint-disable-next-line max-nesting-depth */
       @supports (background-image: url("../img/order-header-bg-mobile@2x.webp")) {
         background-image: url("../img/order-header-bg-mobile@2x.webp");
       }
@@ -31,15 +32,18 @@
       background-image: url("../img/order-header-bg-tablet.jpg");
       margin-block-end: 99px;
 
+      /* stylelint-disable-next-line max-nesting-depth */
       @supports (background-image: url("../img/order-header-bg-tablet.webp")) {
         background-image: url("../img/order-header-bg-tablet.webp");
         background-repeat: no-repeat;
         background-position: left bottom;
       }
 
+      /* stylelint-disable-next-line max-nesting-depth */
       @include retina {
         background-image: url("../img/order-header-bg-tablet@2x.jpg");
 
+        /* stylelint-disable-next-line max-nesting-depth */
         @supports (background-image: url("../img/order-header-bg-tablet@2x.webp")) {
           background-image: url("../img/order-header-bg-tablet@2x.webp");
         }
@@ -49,15 +53,18 @@
     @include desktop {
       background-image: url("../img/order-header-bg-desktop.jpg");
 
+      /* stylelint-disable-next-line max-nesting-depth */
       @supports (background-image: url("../img/order-header-bg-desktop.webp")) {
         background-image: url("../img/order-header-bg-desktop.webp");
         background-repeat: no-repeat;
         background-position: left bottom;
       }
 
+      /* stylelint-disable-next-line max-nesting-depth */
       @include retina {
         background-image: url("../img/order-header-bg-desktop@2x.jpg");
 
+        /* stylelint-disable-next-line max-nesting-depth */
         @supports (background-image: url("../img/order-header-bg-desktop@2x.webp")) {
           background-image: url("../img/order-header-bg-desktop@2x.webp");
         }
@@ -67,7 +74,7 @@
 }
 
 .order__wrapper {
-  padding: 0 26px;
+  padding: 0 26px 64px;
 }
 
 .order__title {

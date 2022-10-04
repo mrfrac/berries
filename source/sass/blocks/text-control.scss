@@ -1,0 +1,52 @@
+.text-control__input {
+  @include mn-s16-h20;
+
+  box-sizing: border-box;
+  padding: 16px 12px;
+  border: 1px solid #0f805d;
+  outline: 0;
+  color: $gray-text-color;
+  border-radius: 20px;
+  width: 100%;
+
+  &:required {
+    border: 1px solid $red-misc-color;
+  }
+
+  &--disabled {
+    border: 1px solid $gray-text-color;
+  }
+
+  &:hover {
+    border: 1px solid $green-misc-color;
+  }
+
+  &:focus {
+    border: 1px solid $green-misc-color;
+    color: #000000;
+  }
+}
+
+.text-control__label {
+  @include mn-s16-h20;
+
+  margin-left: 10px;
+  margin-bottom: 4px;
+
+  &--small {
+    @include mn-s14-h16;
+
+    margin-left: 20px;
+    margin-top: 2px;
+    margin-bottom: 8px;
+  }
+}
+
+.text-control--required .text-control__label {
+  &::after {
+    content: "*";
+    display: inline-block;
+    color: $red-misc-color;
+    margin-left: 5px;
+  }
+}

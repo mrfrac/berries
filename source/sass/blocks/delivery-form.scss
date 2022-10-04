@@ -1,0 +1,11 @@
+.delivery-form__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+}
+
+.delivery-form__label {
+  &:last-child {
+    width: 220px;
+  }
+}

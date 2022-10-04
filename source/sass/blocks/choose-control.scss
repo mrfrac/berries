@@ -1,0 +1,145 @@
+.choose-control {
+  display: flex;
+  align-items: center;
+}
+
+.choose-control__label {
+  @include mn-s16-h19;
+
+  // text-transform: uppercase;
+
+  &--small {
+    @include mn-s14-h16;
+  }
+
+  @include tablet {
+    // @include mr-s20-h30;
+  }
+}
+
+.choose-control__input {
+  appearance: none;
+  background-color: unset;
+  margin: 0;
+  position: relative;
+
+  &:checked::before,
+  &:not(:checked)::before {
+    content: "";
+    display: inline-block;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    border-radius: 100%;
+    box-sizing: border-box;
+    width: 21px;
+    height: 21px;
+    border: 2px solid $green-accent-color;
+    margin-right: 16px;
+
+    @include tablet {
+      width: 38px;
+      height: 38px;
+      margin-right: 20px;
+    }
+  }
+
+  &--checkbox:checked::before,
+  &--checkbox:not(:checked)::before {
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-right: 9px;
+
+    @include tablet {
+      width: 38px;
+      height: 38px;
+    }
+  }
+
+  &:checked:hover::before,
+  &:not(:checked):hover::before {
+    border: 2px solid $green-misc-color;
+  }
+
+  &:checked:hover::after,
+  &:not(:checked):hover::after {
+    background-color: $green-misc-color;
+  }
+
+  &:disabled::before {
+    border: 2px solid rgba(142, 152, 146, 0.7);
+    opacity: 0.3;
+  }
+
+  &:checked::after,
+  &:not(:checked)::after {
+    content: "";
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    box-sizing: border-box;
+    background-color: $green-accent-color;
+    border-radius: 100%;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+
+    @include tablet {
+      width: 18px;
+      height: 18px;
+      top: 11px;
+      left: 11px;
+    }
+
+    @include desktop {
+      top: 11px;
+      left: 12px;
+    }
+  }
+
+  &--checkbox:checked::after,
+  &--checkbox:not(:checked)::after {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 12px;
+    background-color: $green-accent-color;
+    mask-image: url("../img/icons/check.svg");
+    mask-size: 14px 12px;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+
+    @include tablet {
+      mask-size: 24px 19px;
+      width: 24px;
+      height: 19px;
+      top: 10px;
+      left: 8px;
+    }
+  }
+
+  &:not(:checked)::after {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  &:checked::after {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  &:checked:disabled::after {
+    border: 2px solid rgba(142, 152, 146, 0.7);
+  }
+}
+
+.choose-control--radio {
+  align-items: center;
+}
+
+.choose-control--radio .choose-control__label {
+  width: 180px;
+}

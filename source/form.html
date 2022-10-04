@@ -61,7 +61,7 @@
 
         <div class="order-params">
           <form class="order-params__form" action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset class="berries-form">
+            <fieldset class="order-params__fieldset berries-form">
               <legend class="order-params__title">Выберите ягоды</legend>
               <div class="berries-form__wrapper">
                 <div class="choose-control">
@@ -127,7 +127,7 @@
               </div>
             </fieldset>
 
-            <fieldset class="storage-form">
+            <fieldset class="order-params__fieldset storage-form">
               <legend class="order-params__title">Вид хранения</legend>
 
               <div class="storage-form__wrapper">
@@ -152,54 +152,54 @@
               </div>
             </fieldset>
 
-            <fieldset class="delivery-form">
+            <fieldset class="order-params__fieldset delivery-form">
               <legend class="order-params__title">Способ доставки</legend>
 
               <div class="delivery-form__wrapper">
-                <div class="choose-control">
+                <div class="choose-control choose-control--radio">
                   <input class="choose-control__input" type="radio" id="delivery" name="delivery" value="delivery" checked>
                   <label class="choose-control__label" for="delivery">
-                    Доставка (по СПБ в пределах КАД)
+                    Доставка<br/>(по СПБ в пределах КАД)
                   </label>
                 </div>
-                <div class="choose-control">
+                <div class="choose-control choose-control--radio">
                   <input class="choose-control__input" type="radio" id="pickup" name="delivery" value="pickup">
-                  <label class="choose-control__label" for="pickup">
-                    Самовывоз (Набережная Обводного канала, 101)
+                  <label class="choose-control__label delivery-form__label" for="pickup">
+                    Самовывоз<br/>(Набережная Обводного канала, 101)
                   </label>
                 </div>
               </div>
             </fieldset>
 
-            <fieldset class="client-contacts">
+            <fieldset class="order-params__fieldset client-contacts">
               <legend class="order-params__title">Ваши контакты</legend>
 
               <div class="client-contacts__wrapper">
-                <div class="text-control">
-                  <label class="text-control__label" for="name">Имя *</label>
+                <div class="text-control client-contacts__item text-control--required">
+                  <label class="text-control__label" for="name">Имя</label>
                   <input class="text-control__input" id="name" type="text" name="name" placeholder="Как к вам обращаться?" required>
                 </div>
-                <div class="text-control">
-                  <label class="text-control__label" for="phone">Телефон *</label>
+                <div class="text-control client-contacts__item text-control--required">
+                  <label class="text-control__label" for="phone">Телефон</label>
                   <div class="text-control__input-group">
                     <input class="text-control__input" id="phone" type="tel" name="phone" placeholder="+7 ххх ххх хх хх" required>
                     <div class="text-control__input-addon-phone"></div>
                   </div>
                 </div>
-                <div class="text-control">
-                  <label class="text-control__label" for="email">Email *</label>
+                <div class="text-control client-contacts__item text-control--required">
+                  <label class="text-control__label" for="email">Email</label>
                   <div class="text-control__input-group">
                     <input class="text-control__input" id="email" type="email" name="email" placeholder="Ваш email" required>
                     <div class="text-control__input-addon-email"></div>
                   </div>
                 </div>
-                <div class="text-control">
-                  <label class="text-control__label" for="address">Адрес *</label>
-                  <textarea class="text-control__input text-control__input--textarea" id="address" name="address" placeholder="Адрес в Санкт-Петербурге"></textarea>
+                <div class="text-control client-contacts__item text-control--required">
+                  <label class="text-control__label" for="address">Адрес</label>
+                  <textarea class="text-control__input text-control__input--textarea client-contacts__address" id="address" name="address" placeholder="Адрес в Санкт-Петербурге"></textarea>
                 </div>
-                <div class="text-control">
+                <div class="text-control client-contacts__item">
                   <label class="text-control__label text-control__label--small" for="name">Пожелания к заказу</label>
-                  <textarea class="text-control__input text-control__input--textarea" id="comments" name="comments" placeholder="Чем мы можем вам помочь?"></textarea>
+                  <textarea class="text-control__input text-control__input--textarea client-contacts__comments" id="comments" name="comments" placeholder="Чем мы можем вам помочь?"></textarea>
                 </div>
               </div>
             </fieldset>
@@ -210,9 +210,9 @@
       </div>
     </section>
 
-    <section class="contacts" id="contacts">
+    <section class="contacts contacts--order-page" id="contacts">
       <div class="contacts__wrapper">
-        <h2 class="contacts__title">Где забрать ягоды? </h2>
+        <h2 class="contacts__title">Где забрать<br/>ягоды? </h2>
         <p class="contacts__text">
           Забери ягоды с&nbsp;нашего склада по&nbsp;адресу:
         </p>

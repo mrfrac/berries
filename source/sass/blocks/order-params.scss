@@ -1,0 +1,21 @@
+.order-params {
+  position: relative;
+  padding-top: 85px;
+
+  &::before {
+    @include leaf-line;
+  }
+}
+
+.order-params__fieldset {
+  border: none;
+  padding: 0;
+  margin-bottom: 32px;
+}
+
+.order-params__title {
+  @include mn-s20-h23;
+
+  color: $green-accent-color;
+  margin-bottom: 30px;
+}
