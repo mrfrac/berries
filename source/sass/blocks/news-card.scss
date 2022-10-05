@@ -32,8 +32,8 @@
     @include desktop {
       bottom: 44px;
     }
-
   }
+
   &:last-child {
     @include tablet {
       margin-left: -9px;
